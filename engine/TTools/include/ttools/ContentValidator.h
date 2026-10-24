@@ -119,9 +119,15 @@ inline void checkIds(const ContentSet& c, std::vector<ContentIssue>& out) {
     std::set<std::string> known = c.builtinIds;
     for (const auto& r : c.records)
         if (!known.insert(r.id).second) out.push_back({ContentIssueKind::DuplicateId, r.id, r.source});
+    // Recipes bridged from decoded recipe records (RecordContent.h) are records too, so their duplicate ids and
+    // unresolved outputs/aspects are already reported against the declaring file; only standalone recipe edges
+    // are checked here, so one bad reference never reports twice.
+    std::set<std::string> recordIds;
+    for (const auto& r : c.records) recordIds.insert(r.id);
     std::set<std::string> recipeIds;
     for (const auto& rc : c.recipes)
-        if (!recipeIds.insert(rc.id).second) out.push_back({ContentIssueKind::DuplicateId, rc.id, "recipe"});
+        if (!recordIds.count(rc.id) && !recipeIds.insert(rc.id).second)
+            out.push_back({ContentIssueKind::DuplicateId, rc.id, "recipe"});
     auto need = [&](const std::string& owner, const std::string& ref) {
         if (!known.count(ref)) out.push_back({ContentIssueKind::UnknownId, owner, ref});
     };
@@ -133,6 +139,7 @@ inline void checkIds(const ContentSet& c, std::vector<ContentIssue>& out) {
         for (const auto& ref : r.references)
             if (!referable.count(ref)) out.push_back({ContentIssueKind::UnknownId, r.id, ref});
     for (const auto& rc : c.recipes) {
+        if (recordIds.count(rc.id)) continue;
         for (const auto& in : rc.inputs) need(rc.id, in);
         for (const auto& o : rc.outputs) need(rc.id, o);
     }
