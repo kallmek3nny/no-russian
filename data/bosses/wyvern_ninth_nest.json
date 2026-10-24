@@ -1,0 +1,22 @@
+[
+  {
+    "id":"boss.wyvern_ninth_nest",
+    "display_name":"The Wyvern of the Ninth Nest",
+    "health":3000,
+    "posture":360,
+    "phase_thresholds":[0.65,0.3],
+    "armour":[
+      {"id":"armour.wyvern_left_fire_gland","integrity":220,"opens_route":"route.nest_ledge"},
+      {"id":"armour.wyvern_right_fire_gland","integrity":220,"opens_route":"route.updraft_spire"},
+      {"id":"armour.wyvern_wing_membrane","integrity":300,"opens_route":"route.fallen_nest_floor"}
+    ],
+    "attacks":[
+      {"id":"atk.wyvern_talon_dive","windup_ms":600,"active_ms":200,"recovery_ms":800,"damage":120,"min_phase":1},
+      {"id":"atk.wyvern_flame_sweep","windup_ms":900,"active_ms":350,"recovery_ms":1000,"damage":150,"min_phase":1,"requires_armour":"armour.wyvern_left_fire_gland"},
+      {"id":"atk.wyvern_cinder_volley","windup_ms":800,"active_ms":300,"recovery_ms":950,"damage":110,"min_phase":1,"requires_armour":"armour.wyvern_right_fire_gland"},
+      {"id":"atk.wyvern_gale_beat","windup_ms":1000,"active_ms":400,"recovery_ms":1100,"damage":100,"min_phase":2,"requires_armour":"armour.wyvern_wing_membrane"},
+      {"id":"atk.wyvern_tail_lash","windup_ms":700,"active_ms":250,"recovery_ms":900,"damage":130,"min_phase":2},
+      {"id":"atk.wyvern_nest_inferno","windup_ms":1500,"active_ms":500,"recovery_ms":1700,"damage":280,"min_phase":3,"requires_armour":"armour.wyvern_right_fire_gland"}
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id":"boss.crown_gate",
+    "display_name":"The Crown Gate",
+    "health":3600,
+    "posture":420,
+    "phase_thresholds":[0.66,0.33],
+    "armour":[
+      {"id":"armour.crown_key_seal","integrity":260,"opens_route":"route.crown_seal_span"},
+      {"id":"armour.crown_key_throne","integrity":280,"opens_route":"route.crown_throne_lift"},
+      {"id":"armour.crown_key_equation","integrity":240,"opens_route":"route.crown_equation_maze"},
+      {"id":"armour.crown_key_verdict","integrity":300,"opens_route":"route.crown_ash_causeway"},
+      {"id":"armour.crown_key_mourge","integrity":320,"opens_route":"route.crown_mourge_rift"}
+    ],
+    "attacks":[
+      {"id":"atk.crown_gear_sweep","windup_ms":600,"active_ms":200,"recovery_ms":800,"damage":110,"min_phase":1},
+      {"id":"atk.crown_seal_lockdown","windup_ms":850,"active_ms":250,"recovery_ms":950,"damage":150,"min_phase":1,"requires_armour":"armour.crown_key_seal"},
+      {"id":"atk.crown_throne_decree","windup_ms":900,"active_ms":300,"recovery_ms":1000,"damage":160,"min_phase":1,"requires_armour":"armour.crown_key_throne"},
+      {"id":"atk.crown_wound_tear","windup_ms":750,"active_ms":300,"recovery_ms":950,"damage":140,"min_phase":2},
+      {"id":"atk.crown_equation_storm","windup_ms":1000,"active_ms":350,"recovery_ms":1100,"damage":170,"min_phase":2,"requires_armour":"armour.crown_key_equation"},
+      {"id":"atk.crown_ash_verdict","windup_ms":1100,"active_ms":400,"recovery_ms":1200,"damage":190,"min_phase":2,"requires_armour":"armour.crown_key_verdict"},
+      {"id":"atk.crown_mourge_tide","windup_ms":1300,"active_ms":450,"recovery_ms":1500,"damage":230,"min_phase":3},
+      {"id":"atk.crown_chosen_ending","windup_ms":1600,"active_ms":500,"recovery_ms":1800,"damage":300,"min_phase":3,"requires_armour":"armour.crown_key_mourge"}
+    ]
+  }
+]

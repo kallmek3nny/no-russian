@@ -1,0 +1,22 @@
+[
+  {
+    "id":"boss.first_tautmaurg",
+    "display_name":"The First Tautmaurg",
+    "health":3200,
+    "posture":360,
+    "phase_thresholds":[0.5],
+    "armour":[
+      {"id":"armour.tautmaurg_gravity_lens","integrity":220,"opens_route":"route.inverted_gallery"},
+      {"id":"armour.tautmaurg_measuring_rod","integrity":180,"opens_route":"route.calibration_bridge"},
+      {"id":"armour.tautmaurg_orrery_ring","integrity":260,"opens_route":"route.orrery_core"}
+    ],
+    "attacks":[
+      {"id":"atk.measured_cut","windup_ms":450,"active_ms":133,"recovery_ms":600,"damage":90,"min_phase":1},
+      {"id":"atk.gravity_inversion","windup_ms":900,"active_ms":250,"recovery_ms":1100,"damage":120,"min_phase":1,"requires_armour":"armour.tautmaurg_gravity_lens"},
+      {"id":"atk.copied_technique","windup_ms":550,"active_ms":166,"recovery_ms":700,"damage":110,"min_phase":1,"requires_armour":"armour.tautmaurg_measuring_rod"},
+      {"id":"atk.orrery_lash","windup_ms":700,"active_ms":200,"recovery_ms":900,"damage":130,"min_phase":1,"requires_armour":"armour.tautmaurg_orrery_ring"},
+      {"id":"atk.research_pattern","windup_ms":600,"active_ms":300,"recovery_ms":800,"damage":100,"min_phase":2},
+      {"id":"atk.proof_of_god","windup_ms":1300,"active_ms":400,"recovery_ms":1500,"damage":240,"min_phase":2}
+    ]
+  }
+]

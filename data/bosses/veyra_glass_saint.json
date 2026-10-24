@@ -1,0 +1,22 @@
+[
+  {
+    "id":"boss.veyra_glass_saint",
+    "display_name":"Veyra, Glass Saint",
+    "health":2800,
+    "posture":320,
+    "phase_thresholds":[0.66,0.33],
+    "armour":[
+      {"id":"armour.veyra_mirror_veil","integrity":200,"opens_route":"route.drowned_stacks"},
+      {"id":"armour.veyra_glass_halo","integrity":240,"opens_route":"route.reflecting_pool"},
+      {"id":"armour.veyra_reed_censer","integrity":160,"opens_route":"route.reed_causeway"}
+    ],
+    "attacks":[
+      {"id":"atk.veyra_glass_needle","windup_ms":400,"active_ms":100,"recovery_ms":500,"damage":75,"min_phase":1},
+      {"id":"atk.veyra_mirror_step","windup_ms":550,"active_ms":133,"recovery_ms":650,"damage":95,"min_phase":1,"requires_armour":"armour.veyra_mirror_veil"},
+      {"id":"atk.veyra_reflected_lunge","windup_ms":650,"active_ms":166,"recovery_ms":800,"damage":115,"min_phase":1,"requires_armour":"armour.veyra_glass_halo"},
+      {"id":"atk.veyra_poison_reed","windup_ms":500,"active_ms":200,"recovery_ms":700,"damage":85,"min_phase":2,"requires_armour":"armour.veyra_reed_censer"},
+      {"id":"atk.veyra_shatter_chorus","windup_ms":900,"active_ms":250,"recovery_ms":1100,"damage":150,"min_phase":2},
+      {"id":"atk.veyra_drowned_hymn","windup_ms":1200,"active_ms":350,"recovery_ms":1400,"damage":220,"min_phase":3}
+    ]
+  }
+]

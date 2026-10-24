@@ -1,0 +1,22 @@
+[
+  {
+    "id":"boss.tautmaurg_of_memory",
+    "display_name":"The Tautmaurg of Memory",
+    "health":2800,
+    "posture":340,
+    "phase_thresholds":[0.6,0.25],
+    "armour":[
+      {"id":"armour.memory_death_reliquary","integrity":240,"opens_route":"route.echo_gallery"},
+      {"id":"armour.memory_build_lattice","integrity":260,"opens_route":"route.archive_stair"},
+      {"id":"armour.memory_choice_mirror","integrity":300,"opens_route":"route.forgotten_vault"}
+    ],
+    "attacks":[
+      {"id":"atk.memory_gilded_strike","windup_ms":550,"active_ms":180,"recovery_ms":750,"damage":100,"min_phase":1},
+      {"id":"atk.memory_death_replay","windup_ms":900,"active_ms":300,"recovery_ms":1000,"damage":160,"min_phase":1,"requires_armour":"armour.memory_death_reliquary"},
+      {"id":"atk.memory_build_mimicry","windup_ms":800,"active_ms":250,"recovery_ms":900,"damage":130,"min_phase":1,"requires_armour":"armour.memory_build_lattice"},
+      {"id":"atk.memory_choice_reckoning","windup_ms":1100,"active_ms":400,"recovery_ms":1200,"damage":180,"min_phase":2,"requires_armour":"armour.memory_choice_mirror"},
+      {"id":"atk.memory_phantom_echo","windup_ms":750,"active_ms":300,"recovery_ms":950,"damage":120,"min_phase":2},
+      {"id":"atk.memory_total_recall","windup_ms":1500,"active_ms":500,"recovery_ms":1700,"damage":270,"min_phase":3,"requires_armour":"armour.memory_death_reliquary"}
+    ]
+  }
+]

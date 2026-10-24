@@ -1,0 +1,22 @@
+[
+  {
+    "id":"boss.khar_duun_furnace_mother",
+    "display_name":"Khar-Duun's Furnace Mother",
+    "health":3600,
+    "posture":420,
+    "phase_thresholds":[0.7,0.4],
+    "armour":[
+      {"id":"armour.furnace_left_arm","integrity":280,"opens_route":"route.conveyor_line"},
+      {"id":"armour.furnace_right_arm","integrity":280,"opens_route":"route.slag_gantry"},
+      {"id":"armour.furnace_boiler_plate","integrity":340,"opens_route":"route.molten_channel"}
+    ],
+    "attacks":[
+      {"id":"atk.furnace_slag_spit","windup_ms":500,"active_ms":166,"recovery_ms":650,"damage":90,"min_phase":1},
+      {"id":"atk.furnace_arm_crush","windup_ms":800,"active_ms":200,"recovery_ms":950,"damage":150,"min_phase":1,"requires_armour":"armour.furnace_left_arm"},
+      {"id":"atk.furnace_conveyor_haul","windup_ms":700,"active_ms":300,"recovery_ms":900,"damage":110,"min_phase":1,"requires_armour":"armour.furnace_right_arm"},
+      {"id":"atk.furnace_molten_flood","windup_ms":1000,"active_ms":400,"recovery_ms":1200,"damage":170,"min_phase":2,"requires_armour":"armour.furnace_boiler_plate"},
+      {"id":"atk.furnace_worker_swarm","windup_ms":900,"active_ms":250,"recovery_ms":1000,"damage":80,"min_phase":2},
+      {"id":"atk.furnace_meltdown","windup_ms":1400,"active_ms":450,"recovery_ms":1600,"damage":260,"min_phase":3}
+    ]
+  }
+]
