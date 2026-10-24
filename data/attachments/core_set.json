@@ -1,0 +1,48 @@
+[
+  {
+    "id":"attachment.aether_core",
+    "display_name":"Aether Core",
+    "slot":"core",
+    "weight":0.5,
+    "durability":60,
+    "damage_scale":1.15,
+    "add_damage":{"aether":6},
+    "flux_per_hit":1.5,
+    "aspect_tags":["motion","light"],
+    "lore_key":"item.aether_core.lore"
+  },
+  {
+    "id":"attachment.frost_rune",
+    "display_name":"Frost Rune",
+    "slot":"rune",
+    "weight":0.2,
+    "durability":80,
+    "add_damage":{"frost":8},
+    "flux_per_hit":0.5,
+    "aspect_tags":["form"],
+    "lore_key":"item.frost_rune.lore"
+  },
+  {
+    "id":"attachment.hunter_optic",
+    "display_name":"Hunter Optic",
+    "slot":"optic",
+    "compatible":["bow","crossbow"],
+    "weight":0.4,
+    "durability":120,
+    "range_scale":1.5,
+    "aspect_tags":["light"],
+    "lore_key":"item.hunter_optic.lore"
+  },
+  {
+    "id":"attachment.baffled_muzzle",
+    "display_name":"Baffled Muzzle",
+    "slot":"muzzle",
+    "compatible":["handcannon"],
+    "weight":0.6,
+    "durability":150,
+    "damage_scale":0.95,
+    "noise":-10,
+    "aspect_tags":["motion"],
+    "lore_key":"item.baffled_muzzle.lore"
+  }
+]

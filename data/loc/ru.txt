@@ -1,0 +1,95 @@
+# ThaumtMourge — русская локализация (первая цель, раздел 26).
+prompt.guard=БЛОК
+prompt.deflect=ОТРАЖЕНИЕ
+prompt.scan=СКАН
+prompt.infuse=НАПОЛНИТЬ
+prompt.rest=ОТДЫХ
+prompt.build=СТРОИТЬ
+menu.studio=RDGaming Studios
+menu.new_journey=Новый путь
+menu.continue=Продолжить
+menu.load_world=Загрузить мир
+menu.multiplayer=Мультиплеер
+menu.settings=Настройки
+menu.mod_data=Данные модов
+menu.exit=Выход
+hud.event_alert=Событие: {0}
+hud.save_recovered=Сохранение восстановлено из копии {0}
+hud.lock_on=Захват цели
+# Меню настроек (разделы 14, 17), в порядке строк
+settings.graphics_tier=Уровень графики
+settings.internal_resolution=Внутреннее разрешение
+settings.camera_distance=Дальность камеры
+settings.motion_reduction=Уменьшение движения
+settings.colourblind=Режим для дальтоников
+settings.subtitles=Субтитры
+settings.font_scale=Размер шрифта
+settings.controller_layout=Раскладка геймпада
+settings.touch_layout=Сенсорная раскладка
+settings.vibration=Вибрация
+settings.audio_mix=Микширование звука
+settings.save_recovery=Восстановление сохранений
+# Страница микширования звука (разделы 17, 24), в порядке ползунков
+audio.master=Общая громкость
+audio.music=Музыка
+audio.effects=Эффекты
+audio.voice=Голос
+audio.ambience=Окружение
+# Страница сенсорной раскладки (разделы 17, 22): размер, по строке на каждый элемент управления раздела 17, сброс, результаты правки
+touch.size=Размер кнопок
+touch.move=Джойстик движения
+touch.look=Панель камеры
+touch.attack=Атака
+touch.guard=Блок
+touch.dodge=Уклонение
+touch.jump=Прыжок
+touch.spell=Заклинание
+touch.interact=Взаимодействие
+touch.item_belt=Пояс предметов
+touch.lock_on=Захват цели
+touch.reset=Сбросить по умолчанию
+touch.too_small=Слишком мало для надёжного нажатия
+touch.covers_hud=Закроет здоровье или стойку
+# Страница восстановления сохранений (разделы 14, 17, 19): по строке на сохранение, его состояние и результат последнего подтверждения
+save.profile=Профиль
+save.character=Персонаж
+save.world_seed=Мир
+save.world_journal=Журнал региона
+save.coop_ledger=Реестр кооператива
+save.good=Не повреждено
+save.recoverable=Повреждено: восстановить из копии {0}
+save.lost=Повреждено: нет пригодной копии
+save.interrupted=Сохранение было прервано
+save.restored=Восстановлено из копии {0}
+save.restore_failed=Не удалось восстановить
+item.aetherfang.name=Эфирный клык
+item.aetherfang.lore=Двуручный клинок, помнящий каждый свой взмах.
+item.order_longsword.name=Длинный меч Ордена
+item.order_longsword.lore=Выдаётся каждому присягнувшему клинку Ордена; на его доле вытравлена клятва.
+item.frostreach_spear.name=Копьё Морозного предела
+item.frostreach_spear.lore=Выковано под Морозной Короной; его остриё так и не оттаяло.
+item.wardens_bow.name=Лук стража
+item.wardens_bow.lore=Его носили стражи, охранявшие уцелевшие узлы; в свете узла он бьёт без промаха.
+item.frostbound_helm.name=Скованный морозом шлем
+item.frostbound_helm.lore=Запечатан во льду Морозной Короны; его носитель слышит холод прежде, чем тот укусит.
+item.frostbound_plate.name=Скованные морозом латы
+item.frostbound_plate.lore=Закалены в талой воде Морозной Короны: они отводят мороз, но пепел всё же находит их швы.
+# Насадки (разделы 7, 12)
+item.aether_core.lore=Запертая искра очищенного Таумия; каждый удар, который она питает, оставляет за собой немного флюкса.
+item.frost_rune.lore=Знак, вырезанный изо льда Морозной Короны, учит клинок очертаниям холода.
+item.hunter_optic.lore=Отшлифованная из узлового стекла, она приближает далёкую добычу так, что можно сосчитать её вдохи.
+item.baffled_muzzle.lore=Витые латунные перегородки глушат рёв ручной пушки, меняя толику силы на тишину.
+lore.order.oath=Измеряй чудо. Сдерживай голод.
+# Акты повествования (раздел 3)
+act.broken_seal=Сломанная печать
+act.five_roads=Пять дорог
+act.council_war=Война Совета
+act.crown_gate=Врата Короны
+act.post_game=После Врат
+# Концовки (раздел 3)
+ending.none=Не определена
+ending.seal=Печать
+ending.throne=Трон
+ending.wild_equation=Дикое уравнение
+ending.ash_verdict=Пепельный приговор
+ending.mourge=Мурж

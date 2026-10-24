@@ -1,0 +1,10 @@
+# Build output (local CMake build trees, ~555 MB total)
+build/
+build-*/
+out/
+
+# IDE state
+.vs/
+
+# Local agent session transcript (not project source)
+2026-10-13-211421-local-command-caveatcaveat-the-messages-below.txt

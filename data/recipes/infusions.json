@@ -1,0 +1,10 @@
+[
+  {
+    "id": "infusion.aether_core",
+    "output": "attachment.aether_core",
+    "cost": {"motion": 2, "light": 2, "memory": 2},
+    "flux": 12,
+    "risk": 0,
+    "unlock": "recipe.aether_core"
+  }
+]

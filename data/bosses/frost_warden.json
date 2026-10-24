@@ -1,0 +1,22 @@
+[
+  {
+    "id":"boss.frost_warden",
+    "display_name":"The Frost Warden",
+    "health":2400,
+    "posture":300,
+    "phase_thresholds":[0.66,0.33],
+    "armour":[
+      {"id":"armour.helm","integrity":200,"opens_route":"route.upper_rampart"},
+      {"id":"armour.shield_arm","integrity":260,"opens_route":"route.gatehouse"},
+      {"id":"armour.greaves","integrity":180,"opens_route":"route.frozen_moat"}
+    ],
+    "attacks":[
+      {"id":"atk.rampart_slam","windup_ms":700,"active_ms":133,"recovery_ms":800,"damage":140,"min_phase":1,"requires_armour":"armour.shield_arm"},
+      {"id":"atk.glacier_sweep","windup_ms":500,"active_ms":166,"recovery_ms":600,"damage":95,"min_phase":1},
+      {"id":"atk.helm_charge","windup_ms":600,"active_ms":200,"recovery_ms":900,"damage":120,"min_phase":1,"requires_armour":"armour.helm"},
+      {"id":"atk.ice_lance","windup_ms":400,"active_ms":100,"recovery_ms":500,"damage":80,"min_phase":2},
+      {"id":"atk.fortress_collapse","windup_ms":1200,"active_ms":300,"recovery_ms":1400,"damage":260,"min_phase":3},
+      {"id":"atk.frost_stomp","windup_ms":450,"active_ms":133,"recovery_ms":550,"damage":90,"min_phase":2,"requires_armour":"armour.greaves"}
+    ]
+  }
+]

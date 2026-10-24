@@ -1,0 +1,100 @@
+# ThaumtMourge English source strings (Section 26). Stable keys only.
+# Combat prompts (Section 26)
+prompt.guard=GUARD
+prompt.deflect=DEFLECT
+prompt.scan=SCAN
+prompt.infuse=INFUSE
+prompt.rest=REST
+prompt.build=BUILD
+# Main menu (Section 17)
+menu.studio=RDGaming Studios
+menu.new_journey=New Journey
+menu.continue=Continue
+menu.load_world=Load World
+menu.multiplayer=Multiplayer
+menu.settings=Settings
+menu.mod_data=Mod Data
+menu.exit=Exit
+# HUD
+hud.event_alert=Event: {0}
+hud.save_recovered=Save recovered from backup {0}
+hud.lock_on=Lock-on
+# Settings menu (Sections 14, 17), in row order
+settings.graphics_tier=Graphics Tier
+settings.internal_resolution=Internal Resolution
+settings.camera_distance=Camera Distance
+settings.motion_reduction=Motion Reduction
+settings.colourblind=Colourblind Mode
+settings.subtitles=Subtitles
+settings.font_scale=Font Size
+settings.controller_layout=Controller Layout
+settings.touch_layout=Touch Layout
+settings.vibration=Vibration
+settings.audio_mix=Audio Mix
+settings.save_recovery=Save Recovery
+# Audio Mix page (Sections 17, 24), in slider order
+audio.master=Master
+audio.music=Music
+audio.effects=Effects
+audio.voice=Voice
+audio.ambience=Ambience
+# Touch Layout page (Sections 17, 22): size row, one row per Section 17 control, reset, edit results
+touch.size=Button Size
+touch.move=Movement Stick
+touch.look=Camera Pad
+touch.attack=Attack
+touch.guard=Guard
+touch.dodge=Dodge
+touch.jump=Jump
+touch.spell=Spell
+touch.interact=Interact
+touch.item_belt=Item Belt
+touch.lock_on=Lock-on
+touch.reset=Reset to Default
+touch.too_small=Too small to tap reliably
+touch.covers_hud=Would cover health or posture
+# Save Recovery page (Sections 14, 17, 19): one row per save, its state, and the latest confirm result
+save.profile=Profile
+save.character=Character
+save.world_seed=World
+save.world_journal=Region Journal
+save.coop_ledger=Co-op Ledger
+save.good=Intact
+save.recoverable=Damaged: restore from backup {0}
+save.lost=Damaged: no usable backup
+save.interrupted=A save was interrupted
+save.restored=Restored from backup {0}
+save.restore_failed=Restore failed
+# Items (Section 21)
+item.aetherfang.name=Aetherfang
+item.aetherfang.lore=A greatblade that remembers every arc it has cut.
+item.order_longsword.name=Order Longsword
+item.order_longsword.lore=Issued to every sworn blade of the Order, its fuller etched with the oath.
+item.frostreach_spear.name=Frostreach Spear
+item.frostreach_spear.lore=Forged beneath the Frost Crown; its point has never thawed.
+item.wardens_bow.name=Warden's Bow
+item.wardens_bow.lore=Carried by the wardens who guarded the surviving nodes, it sights true by node-light.
+item.frostbound_helm.name=Frostbound Helm
+item.frostbound_helm.lore=Sealed in Frost Crown ice; its wearer hears the cold before it bites.
+item.frostbound_plate.name=Frostbound Plate
+item.frostbound_plate.lore=Quenched in the Frost Crown's meltwater, it turns frost aside, but ash still finds its seams.
+# Attachments (Sections 7, 12)
+item.aether_core.lore=A caged spark of refined Taumium; every strike it powers leaves a little flux behind.
+item.frost_rune.lore=A sigil cut from Frost Crown ice that teaches a blade the shape of cold.
+item.hunter_optic.lore=Ground from node-glass, it draws distant quarry close enough to count its breaths.
+item.baffled_muzzle.lore=Wound brass baffles swallow a handcannon's roar, trading a little bite for silence.
+# Oath
+lore.order.oath=Measure the wonder. Restrain the hunger.
+# Narrative acts (Section 3)
+act.broken_seal=The Broken Seal
+act.five_roads=The Five Roads
+act.council_war=The Council War
+act.crown_gate=The Crown Gate
+act.post_game=After the Gate
+# Endings (Section 3)
+ending.none=Unresolved
+ending.seal=The Seal
+ending.throne=The Throne
+ending.wild_equation=The Wild Equation
+ending.ash_verdict=The Ash Verdict
+ending.mourge=The Mourge

@@ -1,0 +1,26 @@
+[
+  {
+    "id":"event.frostbound_patrol",
+    "requirements":{"biome":["frost_crown"]},
+    "stages":["rumour","patrol_sighted","shield_wall","aftermath"],
+    "failure_result":"frostbound_patrol_route",
+    "success_result":"knight_cairn_and_armour_cache",
+    "cooldown_hours":24
+  },
+  {
+    "id":"event.aurora_surge",
+    "requirements":{"biome":["frost_crown"]},
+    "stages":["rumour","aurora_flare","aspect_storm","aftermath"],
+    "failure_result":"aurora_scarred_hostile_remnant",
+    "success_result":"aurora_crystal_shrine",
+    "cooldown_hours":36
+  },
+  {
+    "id":"event.avalanche_road",
+    "requirements":{"biome":["frost_crown"]},
+    "stages":["rumour","snow_cornice","avalanche","aftermath"],
+    "failure_result":"buried_road_ruin",
+    "success_result":"cleared_pass_shortcut",
+    "cooldown_hours":30
+  }
+]

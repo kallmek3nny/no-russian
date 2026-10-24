@@ -1,0 +1,26 @@
+[
+  {
+    "id":"armor.frostbound_helm",
+    "display_name":"Frostbound Helm",
+    "slot":"head",
+    "weight":3.2,
+    "poise":14,
+    "durability":180,
+    "resistances":{"frost":0.75,"ash":1.25},
+    "sockets":["rune"],
+    "aspect_tags":["form"],
+    "lore_key":"item.frostbound_helm.lore"
+  },
+  {
+    "id":"armor.frostbound_plate",
+    "display_name":"Frostbound Plate",
+    "slot":"torso",
+    "weight":9.5,
+    "poise":32,
+    "durability":260,
+    "resistances":{"physical":0.85,"frost":0.6,"ash":1.35},
+    "sockets":["rune","core"],
+    "aspect_tags":["form","memory"],
+    "lore_key":"item.frostbound_plate.lore"
+  }
+]

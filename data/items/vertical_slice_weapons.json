@@ -1,0 +1,58 @@
+[
+  {
+    "id":"weapon.aetherfang",
+    "display_name":"Aetherfang",
+    "family":"greatblade",
+    "damage":{"physical":42,"aether":8},
+    "posture":38,
+    "vis_cost":8,
+    "weight":7.2,
+    "sockets":["core","guard","rune"],
+    "moveset":"greatblade_02",
+    "aspect_tags":["motion","memory"],
+    "lore_key":"item.aetherfang.lore",
+    "timing":{"windup_ms":500,"active_ms":133,"recovery_ms":600,"stamina":24}
+  },
+  {
+    "id":"weapon.order_longsword",
+    "display_name":"Order Longsword",
+    "family":"longsword",
+    "damage":{"physical":28},
+    "posture":22,
+    "vis_cost":4,
+    "weight":3.8,
+    "sockets":["guard","rune"],
+    "moveset":"longsword_01",
+    "aspect_tags":["form"],
+    "lore_key":"item.order_longsword.lore",
+    "timing":{"windup_ms":300,"active_ms":100,"recovery_ms":400,"stamina":14}
+  },
+  {
+    "id":"weapon.frostreach_spear",
+    "display_name":"Frostreach Spear",
+    "family":"spear",
+    "damage":{"physical":24,"frost":10},
+    "posture":18,
+    "vis_cost":6,
+    "weight":4.5,
+    "sockets":["grip","rune"],
+    "moveset":"spear_01",
+    "aspect_tags":["motion","life"],
+    "lore_key":"item.frostreach_spear.lore",
+    "timing":{"windup_ms":350,"active_ms":100,"recovery_ms":450,"stamina":16}
+  },
+  {
+    "id":"weapon.wardens_bow",
+    "display_name":"Warden's Bow",
+    "family":"bow",
+    "damage":{"physical":20,"verdant":4},
+    "posture":8,
+    "vis_cost":3,
+    "weight":2.1,
+    "sockets":["optic","grip"],
+    "moveset":"bow_01",
+    "aspect_tags":["light"],
+    "lore_key":"item.wardens_bow.lore",
+    "timing":{"windup_ms":400,"active_ms":33,"recovery_ms":300,"stamina":10}
+  }
+]

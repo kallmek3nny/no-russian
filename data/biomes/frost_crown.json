@@ -1,0 +1,70 @@
+[
+  {
+    "id": "frost_crown",
+    "name": "Frost Crown",
+    "palette": {
+      "top": "snow",
+      "filler": "frozen_dirt",
+      "base": "stone",
+      "lake": "ice",
+      "cave_lining": "packed_ice",
+      "filler_depth": 3
+    },
+    "terrain": {
+      "base_height": 64,
+      "amplitude": 40,
+      "valley_depth": 28,
+      "feature_size": 96,
+      "sea_level": 48,
+      "cave_feature_size": 24,
+      "cave_threshold": 0.70,
+      "cave_min_y": 8,
+      "cave_max_y": 56
+    },
+    "ores": [
+      {"block": "frost_iron_ore", "min_y": 10, "max_y": 60, "veins_per_chunk": 6, "vein_size": 6},
+      {"block": "aurora_crystal", "min_y": 8, "max_y": 40, "veins_per_chunk": 3, "vein_size": 4},
+      {"block": "taumium_ore", "min_y": 2, "max_y": 20, "veins_per_chunk": 1, "vein_size": 3}
+    ],
+    "vegetation": [
+      {"id": "veg.frost_pine", "trunk": "frost_pine_log", "crown": "frost_pine_needles", "per_chunk": 4, "min_height": 5, "max_height": 8},
+      {"id": "veg.ice_spire", "trunk": "ice_spire", "crown": "ice_spire", "per_chunk": 2, "min_height": 2, "max_height": 5}
+    ],
+    "weather": [
+      {"id": "weather.clear_cold", "weight": 40},
+      {"id": "weather.snowfall", "weight": 30},
+      {"id": "weather.blizzard", "weight": 15},
+      {"id": "weather.blue_aurora", "weight": 15}
+    ],
+    "ambient_audio": [
+      {"id": "audio.wind_howl", "weight": 4},
+      {"id": "audio.ice_creak", "weight": 3},
+      {"id": "audio.distant_bells", "weight": 1},
+      {"id": "audio.aurora_hum", "weight": 2}
+    ],
+    "ruin_kit": [
+      {"id": "ruin.frozen_watchtower", "weight": 3},
+      {"id": "ruin.buried_shrine", "weight": 2},
+      {"id": "ruin.knight_cairn", "weight": 3},
+      {"id": "ruin.ice_cave_mouth", "weight": 2}
+    ],
+    "enemy_families": [
+      {"id": "enemy.frostbound_knight", "weight": 40},
+      {"id": "enemy.snow_wolf", "weight": 25},
+      {"id": "enemy.ice_wraith", "weight": 25},
+      {"id": "enemy.rime_golem", "weight": 10}
+    ],
+    "events": [
+      {"id": "event.frostbound_patrol", "weight": 4},
+      {"id": "event.aurora_surge", "weight": 2},
+      {"id": "event.avalanche_road", "weight": 3},
+      {"id": "event.caravan_under_siege", "weight": 1}
+    ],
+    "boss_modifiers": [
+      {"id": "mod.frost_resist", "value": 0.5},
+      {"id": "mod.fire_weakness", "value": 1.5},
+      {"id": "mod.blizzard_visibility", "value": 0.6},
+      {"id": "mod.aurora_posture", "value": 1.25}
+    ]
+  }
+]
