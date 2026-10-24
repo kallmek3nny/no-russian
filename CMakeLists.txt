@@ -345,3 +345,23 @@ add_executable(test_attachment_record tests/test_attachment_record.cpp)
 target_link_libraries(test_attachment_record PRIVATE TCombat)
 target_compile_definitions(test_attachment_record PRIVATE LT_DATA_DIR="${CMAKE_CURRENT_SOURCE_DIR}/data")
 add_test(NAME attachment_record COMMAND test_attachment_record)
+
+# Sections 14/15/17/19/23/26 headless launcher: render tier selection, English/Russian string tables,
+# profile store with backups, crash log, and the Milestone B Frost Crown fixed-tick vertical slice
+add_executable(thaumt_mourge game/src/main.cpp)
+target_link_libraries(thaumt_mourge PRIVATE Game TRender TWorld TCore)
+# Section 20 build identity: the git commit at configure time and the project version as content version
+set(LT_BUILD_COMMIT "unknown")
+find_package(Git QUIET)
+if(GIT_FOUND)
+    execute_process(COMMAND ${GIT_EXECUTABLE} rev-parse --short HEAD
+                    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+                    OUTPUT_VARIABLE LT_GIT_COMMIT OUTPUT_STRIP_TRAILING_WHITESPACE
+                    RESULT_VARIABLE LT_GIT_RESULT ERROR_QUIET)
+    if(LT_GIT_RESULT EQUAL 0 AND LT_GIT_COMMIT)
+        set(LT_BUILD_COMMIT "${LT_GIT_COMMIT}")
+    endif()
+endif()
+target_compile_definitions(thaumt_mourge PRIVATE LT_DATA_DIR="${CMAKE_CURRENT_SOURCE_DIR}/data"
+                           LT_BUILD_COMMIT="${LT_BUILD_COMMIT}" LT_CONTENT_VERSION="${PROJECT_VERSION}")
+add_test(NAME launcher_smoke COMMAND thaumt_mourge --locale ru --walk --ticks 120 --radius 1 --saves ${CMAKE_CURRENT_BINARY_DIR}/launcher_smoke_saves)
